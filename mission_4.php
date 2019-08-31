@@ -33,6 +33,7 @@ query()はPDOクラスのメソッド。上記レファレンスにもPOD::queryという形で書いてある
 
 $sql ='SHOW TABLES';  //SHOW TABLESのSQLstatement
 //$resultにquery($sql)を実行して得られたPDOStatementオブジェクトを格納
+//配列はオブジェクトともいえる。
 $result = $pdo -> query($sql);
 
 foreach ($result as $row){
